@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>すきまに</title> 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  
+
+</head>
+<body>
+  <div class="container">
+ 
+  <h1> <span>本日のエッセンスワードはこれ</span></h1>
+    <button class ="shadow" onclick="draw()">ボタン押してや</button>
+    <p><span id ="fortune" class ="fortune"></span></p>
+    <p>がんばりや❣リトルミーが応援してるで❣</p>
+   
+  </div>
+
+<script>
+   const results = [
+' 思ったことをちゃんとやる人',
+' これからどうするかだけを考える',
+' そろそろ精一杯生きる決意',
+' 言葉は習慣になる',
+' 自信があってもなくてもいいという思い',
+' 心の底からありがとうを言う',
+' 小さな幸せを集めて楽しく生きる',
+' お家の中は体の中',
+' 常に笑顔で切り抜ける',
+' 3秒以内に立ち直る',
+' 座り続けることは体に良くない',
+' 幸せ眼鏡をつけて見る',
+' あきらめたらそこで終わり',
+' 目がアーモンド',
+' たかが知れてる私の悩み',
+' 常に自分の頭で考える',
+' どんな人生ならあなたはときめくのか',
+' ゴールを決める。あとは走るだけ。',
+' 気分下がったら掃除して気分をあげよ',
+' どーせ無理っていうのは便利な言葉だね',
+' 質問。あなたは何がしたいの？',
+' 行動のブレーキを外す',
+' 自分が変われば世界が変わる',
+' 誰の人生だ？',
+' 元気出ないならキッチンに行き料理をする',
+' やったことがないことをやる',
+' もうひとつコミュニティを見つける',
+' 胸をスリスリ深呼吸',
+' 感謝の気持ちを忘れない人',
+' チーム自分(内臓、脳たち）マジ今日もありがとう',
+' 鏡を見て自分を褒めちぎる',
+' 迷ったらとりあえずやる',
+' 新しいものをどんどん取り入れる',
+' 笑う笑う笑う',
+' ひとはいくらでも変われる',
+' 趣味を増やす。小さくゆるく始めてみる',
+' ちょっとずつ変わっていく',
+' フットワークの軽さ',
+' とにかく笑顔',
+' いつも楽しいアンテナを立てる',
+' エプロンの上にエプロン',
+' ニュートラルで行く',
+' 持ってるもんは皆一緒',
+' 単なる感情1.2.3ハイ忘れた',
+' 人生丸ごと遊びです',
+' 自分を生かすためまずどんな自分かをよく知る',
+   ]
+  function draw(){
+    const key = Math.floor(Math.random()*results.length)
+    console.log(key)
+   const fortune = document.getElementById("fortune")
+   fortune.textContent=results[key]
+  }
+</script>
+</body>
+</html>
