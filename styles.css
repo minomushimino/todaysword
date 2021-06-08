@@ -1,0 +1,79 @@
+
+  html {
+    font-family: 'Yusei Magic', sans-serif;
+  }
+  .container {
+  text-align: center;
+  padding: 50px 0;
+ 
+}
+
+button {
+  color: #fff;
+  background-color: #eb6100;
+  border-bottom: 5px solid #b84c00;
+  transition: 0.3s;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-radius: 3px;
+  margin: 2em 0;
+  padding: 0.6em 1.5em;
+  /* font-family: 'Yusei Magic', sans-serif; */
+  letter-spacing: .07rem;
+}
+
+button:hover {
+  margin-top: 3px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+.fortune {
+  color: red;
+  font-size: 2rem;
+}
+
+body {
+  background-color: #ece5da;
+  text-align: center;
+}
+
+h1 {
+  color: #202020;
+  /* text-transform: uppercase; */
+  letter-spacing: -2px;
+}
+
+h1 span {
+  display: block;
+  margin: 11px 0 17px 0;
+  font-size: 80px;
+  line-height: 80px;
+  /* color: #f1ebe5; */
+  color: rgb(245, 186, 206);
+  text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  letter-spacing: -4px;
+}
+@media screen and (max-width: 768px){
+  .container { 
+    padding: 0;   
+  }
+  h1 span {
+
+    margin: 11px 0 17px 0;
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .shadow {
+    font-size: 1.1rem;
+  }
+}
