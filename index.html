@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>すきまに</title> 
+ 
+  <title>オカンの一言</title> 
+  
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
@@ -12,11 +14,14 @@
 </head>
 <body>
   <div class="container">
+
+   <div id="date"></div>
  
-  <h1> <span>本日のエッセンスワードはこれ</span></h1>
+ 
+  <h1> <span>オカンから一言やで</span></h1>
     <button class ="shadow" onclick="draw()">ボタン押してや</button>
     <p><span id ="fortune" class ="fortune"></span></p>
-    <p>がんばりや❣リトルミーが応援してるで❣</p>
+    <p>あんたの中のリトルオカンが応援してるで❣<br>がんばりや❣</p>
    
   </div>
 
@@ -68,6 +73,7 @@
 ' 単なる感情1.2.3ハイ忘れた',
 ' 人生丸ごと遊びです',
 ' 自分を生かすためまずどんな自分かをよく知る',
+' 今日が一番若い日',
    ]
   function draw(){
     const key = Math.floor(Math.random()*results.length)
@@ -75,6 +81,18 @@
    const fortune = document.getElementById("fortune")
    fortune.textContent=results[key]
   }
+
+  const today = new Date(),
+
+  days = ["日","月","火","水","木","金","土"];
+  let outputText = "今日は";
+  outputText += today.getFullYear() + "年";
+  outputText += (today.getMonth() + 1) + "月";
+  outputText += today.getDate() + "日";
+  outputText += "(" + days[today.getDay()] + ")";
+  outputText += "やで";
+
+document.getElementById("date").textContent = outputText;
 </script>
 </body>
 </html>
