@@ -16,10 +16,9 @@ button {
   border-right: none;
   border-left: none;
   border-top: none;
-  border-radius: 3px;
+  border-radius: 50%;
   margin: 2em 0;
-  padding: 0.6em 1.5em;
-  /* font-family: 'Yusei Magic', sans-serif; */
+  padding:2em 2em;
   letter-spacing: .07rem;
 }
 
@@ -27,7 +26,7 @@ button:hover {
   margin-top: 3px;
   color: #fff;
   background: #f56500;
-  border-bottom: 2px solid #b84c00;
+  border-bottom: 6px solid #b84c00;
   cursor: pointer;
   box-shadow: none;
 }
@@ -43,7 +42,7 @@ button:hover {
 }
 
 body {
-  background-color: #ece5da;
+  background-color:  rgb(50, 228, 247);
   text-align: center;
 }
 
@@ -63,6 +62,64 @@ h1 span {
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
   letter-spacing: -4px;
 }
+.ouen {
+  color:rgb(52, 6, 21);
+}
+.big{
+  font-size: 2rem;
+}
+/* 雲ふわふわ */
+#cloud {
+  justify-content: space-around;
+  display: flex;
+
+}
+
+.img_box {
+  animation: img_box_9955 3s linear infinite;
+  transform-origin: 50% 50%;
+  margin: 1rem 0 !important;
+
+}
+
+.img_box1 {
+  animation: img_box_9955 5s linear infinite;
+  transform-origin: 50% 50%;
+  margin: 1rem 0 !important;
+  width: 20%;
+  object-fit: contain;
+
+}
+
+.img_box2 {
+  animation: img_box_9955 2s linear infinite;
+  transform-origin: 50% 50%;
+  margin: 1rem 0 !important;
+  width: 20%;
+  object-fit: contain;
+
+}
+
+@keyframes img_box_9955 {
+  0% {
+    transform: translateY(0)
+  }
+
+  33.33333% {
+    transform: translateY(-10px)
+  }
+
+  66.66667% {
+    transform: translateY(0)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+/* 雲ふわふわ 終わり*/
+
 @media screen and (max-width: 768px){
   .container { 
     padding: 0;   
@@ -75,5 +132,9 @@ h1 span {
   }
   .shadow {
     font-size: 1.1rem;
+  }
+  .img_box {
+   width:50%;
+  
   }
 }
