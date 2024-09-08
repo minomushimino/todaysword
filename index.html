@@ -22,13 +22,21 @@
   <h1> <span>オカンから一言やで</span></h1>
     <button class ="shadow" onclick="draw()">ボタン押してや</button>
     <p><span id ="fortune" class ="fortune"></span></p>
-    <p>あんたの中のリトルオカンが応援してるで❣<br>がんばりや❣</p>
+    <p>いつでも全力応援してるで❣<br>生きろ❣</p>
+    
+    <div id="cloud">
+      <img src="img/kumo3.png" class="img_box2" />
+      <img src="img/kumo3.png" class="img_box" />
+      <img src="img/kumo3.png" class="img_box1" />
+
+    </div>
    
   </div>
 
 <script>
    const results = [
-' 思ったことをちゃんとやる人',
+' 今の幸せに気づけ',
+' 心配するな、何事もいつかは終わるのだ',     
 ' これからどうするかだけを考える',
 ' そろそろ精一杯生きる決意',
 ' 言葉は習慣になる',
@@ -85,6 +93,13 @@
 ' 人生丸ごと遊びです',
 ' 自分を生かすためまずどんな自分かをよく知る',
 ' 今日が一番若い日',
+' 人生はゲーム',
+' 人生は平等じゃない',
+' 過去と他人は変えられない 未来と自分は変えられる',
+' 選択肢はいつもある',
+' 怒っても得する事はない 自分の機嫌は自分でとる',
+' 人生に意味などない ただ楽しく生きろ',
+        
    ]
   function draw(){
     const key = Math.floor(Math.random()*results.length)
