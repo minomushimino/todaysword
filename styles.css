@@ -133,6 +133,7 @@ h1 span {
   }
  .big {
     margin-top: 0;
+    margin-bottom: 10px;
 }
    .shadow {
     font-size: 1rem;
